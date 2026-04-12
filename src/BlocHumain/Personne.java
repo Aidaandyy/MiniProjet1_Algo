@@ -5,6 +5,30 @@ public class Personne {
     private String adresse;
     private String contact;
 
+    public String getIdentifiant() {
+        return identifiant;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public void setIdentifiant(String identifiant) {
+        this.identifiant = identifiant;
+    }
+
     public Personne(String identifiant, String nom, String adresse, String contact) {
         this.identifiant = identifiant;
         this.nom = nom;
