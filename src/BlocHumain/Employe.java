@@ -1,3 +1,4 @@
+package BlocHumain;
 public class Employe extends Personne {
     private String numeroEmploye;
     private String dateEmbauche;

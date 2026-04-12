@@ -1,3 +1,5 @@
+package BlocHumain;
+
 public class Passager extends Personne {
 
     private String passeport;

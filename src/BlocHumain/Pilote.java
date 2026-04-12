@@ -1,3 +1,4 @@
+package BlocHumain;
 public class Pilote extends Employe {
     private String licence;
     private int heuresDeVol;

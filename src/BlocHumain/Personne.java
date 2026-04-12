@@ -1,3 +1,4 @@
+package BlocHumain;
 public class Personne {
     private String identifiant;
     private String nom;

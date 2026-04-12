@@ -1,3 +1,4 @@
+package BlocHumain;
 public class PersonnelCabine extends Employe {
     private String qualification;
 
