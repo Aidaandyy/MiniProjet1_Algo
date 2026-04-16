@@ -10,6 +10,7 @@ public class Avion {
         this.modele = modele;
         this.capacite = capacite;
     }
+
     public void affecterVol() {
         System.out.println("L'avion " + immatriculation + " est affecté à un vol.");
     }

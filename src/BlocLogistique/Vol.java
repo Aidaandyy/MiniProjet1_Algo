@@ -1,7 +1,8 @@
 package BlocLogistique;
 import java.util.ArrayList;
 import BlocHumain.Passager;
-import BlocHumain.Personne;
+import BlocHumain.Pilote;
+import BlocHumain.PersonnelCabine;
 
 public class Vol {
     private String numeroVol;
@@ -10,6 +11,8 @@ public class Vol {
     private String dateHeureDepart;
     private String dateHeureArrivee;
     private String etat;
+    private Pilote pilote;
+    private ArrayList<PersonnelCabine> equipeCabine = new ArrayList<>();
 
     private Avion avion;
 
@@ -43,6 +46,15 @@ public class Vol {
                 System.out.println("- " + p.getNom());
             }
         }
+    }
+    public void affecterVol(Pilote p, ArrayList<PersonnelCabine> equipe) {
+        this.pilote = p;
+        this.equipeCabine = equipe;
+        System.out.println("Équipage affecté au vol " + numeroVol);
+    }
+    public void obtenirVol() {
+        System.out.println("Infos Vol " + numeroVol + " | De " + Origine.getNom() + " vers " + destination.getNom());
+        System.out.println("État : " + etat);
     }
     public String getNumeroVol() { return numeroVol; }
     public void setNumeroVol(String numeroVol) { this.numeroVol = numeroVol; }
